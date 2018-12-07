@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      html,body{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        text-align: center;
+        min-width: 260px;
+        color: #333;
+        
+      }
+
+      h3 {
+        font-size: 0.7vh;
+        margin: 0;
+      }
+
+      #main {
+        display: grid;
+        background-color: #dcdcdc;
+        border-radius: 5px;
+        grid-template: auto auto auto auto / 1fr;
+        grid-template-areas: "title"
+                             "imag"
+                             "main"
+                             "footer";
+      }
+
+      #title {
+        grid-area: title;
+        padding: 0 30px;
+      }
+
+      #img-div {
+        grid-area: imag;
+        justify-self: center;
+        background-color: #fff;
+        padding: 10px 5px 5px 10px;
+      }
+
+      #image {
+        max-width: 100%;
+        display: block;
+        height: auto;
+        
+      }
+
+      #img-caption {
+        margin-bottom: 20px;
+      }
+
+      #tribute-info {
+        margin-top: 10px;
+        grid-area: main;
+        text-align: left;
+        padding: 0 50px;
+      }
+
+      #uList {
+        padding-right: 10px;
+      }
+
+      #finalP {
+        text-align: center;
+        font-size: 3.5vh;
+      }
+
+      #footer {
+        grid-area: footer;
+        padding: 20px 50px;
+      }
+
+      @media screen 
+        and (min-device-width: 800px) 
+        and (max-device-width: 1600px) 
+        { 
+          
+          h3 {
+            font-size: 3vh;
+            margin: 0;
+          }
+          
+          #main {
+            grid-template: auto auto auto auto / 1fr 80% 1fr;
+            grid-template-areas: ". title ."
+                                 ". imag ."
+                                 ". main ."
+                                 ". footer .";
+          }
+
+      }
+
+    </style>
+
+    <div id="main">
+      <header id="title">
+        <h1>Jorge Eliécer Gaitán</h1>
+        <h2>El hombre que fue un pueblo</h2>
+      </header>
+      <div id="img-div">
+        <img src="http://www.eltiempo.com/files/article_main/uploads/2018/04/07/5ac9253b59e44.jpeg" alt="Jorge Eliécer Gaitán" id="image"> <br>
+        <div id="img-caption"><h3><i><strong>Gaitán en un acto público.</strong><br>Archivos Lunga</i></h3></div>
+      </div>
+        
+        
+      <main id="tribute-info">
+          <p>Mi esposa habla frecuentemente y con mucha admiración acerca del abogado Jorge Eliécer Gaitán. Por mi parte, confieso que conocía muy poco acerca del líder bogotano, poco más allá de los sitios tan comunes de su asesinato y de la impresión de su rostro  sin emociones en los billetes de mil pesos colombianos mientras que el rostro de mi esposa cambia, refleja admiración, dolor y pena y una sombra de pesar se adivina en sus ojos húmedos cuando habla acerca del caudillo bogotano.</p>
+
+          <p>Ella recuerda también que su abuelito estimaba mucho a este colombiano de origen humilde, admiraba los ideales de cambio que representaba para una clase social oprimida y se refería a él como a un líder con el cual el pueblo podía identificarse y por el cual se podía sentir fácilmente un profundo respeto.</p>
+          
+          <p>Imagino que mientras que el abuelo hablaba a su pequeña y morena nieta de las avanzadas ideas que tenía Gaitán para el pueblo, mientras volcaba sus recuerdos en ese joven cerebro, la pequeña iba grabando esas palabras en su prodigiosa memoria con el fin, sin saberlo aún, de repetirlas, muy adelante en el tiempo, a otro muy interesado oyente.</p>
+
+          <p>Entiendo que Jorge Eliécer fue un hombre extraordinario, que ayudaba despreocupadamente a quienes se acercaban a él con alguna necesidad. Un hombre surgido del pueblo y que le pertenecía al pueblo en cuerpo y alma, un hombre que conocía los sufrimientos de los humildes, un hombre totalmente convencido del poder que tiene la educación y un visionario, cuyas ideas parecían estar mil años luz adelantadas a su tiempo.</p>
+          <p>Estas son algunas de las ideas del abogado, las cuales seguramente parecerán locuras a las élites que se siguen mostrando renuentes a la transformación de una sociedad injusta en otra más equitativa e incluyente. Las presento aquí a modo de sencillo homenaje a la memoria del hombre que quiso hacer de Colombia un mejor país y reconociendo en mi esposa a un ser maravilloso que ha querido compartir conmigo sus más valiosos e íntimos recuerdos.</p>
+          <ul id="uList">
+            <li>Jorge Eliécer Gaitán distinguía entre la política en grande y la política en pequeño, encarnadas respectivamente por el político y el politiquero que reduce la política a “su simple aspecto inmediato, transeúnte y mecánico”.</li>
+            <li>Para Gaitán, en la política nacional se impone, por desgracia, la falsa política, la de los politiqueros, al girar en torno a las elecciones con el único propósito de conquistar las curules para los distintos aspirantes, lejos de abordar los verdaderos problemas de la comunidad. </li>
+            <li>Gaitán señalaba que la actividad de nuestros políticos se limita a pensar en función de las elecciones, a estar en campaña permanente e ir en busca del pueblo no para conocer sus necesidades ni para tratar de resolver sus problemas, sino para garantizar su elección.</li>
+            <li>En su célebre discurso del 20 de abril en el Teatro Municipal de Bogotá, Gaitán indicó que "en Colombia hay dos países: el país que piensa en sus empleos, en su mecánica y en su poder, y el país nacional que piensa en su trabajo, en su salud, en su cultura, desatendido por el país político”.</li>
+            <li>Para Gaitán, el país nacional tiene una gran voluntad de progreso, mientras que el país político es conformista y no aspira a un cambio sino al mantenimiento de la situación para continuar disfrutando de sus privilegios.</li>
+            <li>Gaitán decía que el país político es el principal culpable de la pobreza del país, de la miseria que azota a la gran mayoría del país nacional, por estar entregado al juego electoral, a la competencia por las curules y los puestos públicos, en medio de su desinterés por los asuntos sociales que se traduce en la no realización de las obras requeridas por el pueblo para su desarrollo.</li>
+            <li>Advertía Gaitán que en estas circunstancias la corrupción es inevitable. De un lado, la entrega total a los asuntos electorales no tarda en llevar a la corrupción (cuya manifestación extrema es la compra de votos) y, de otro, se le impone al país nacional una ética singular, según la cual es bueno lo que al país político le conviene, y es malo lo que va en contra de sus intereses.</li>
+            </ul>
+          <p id="finalP">"Yo no soy un hombre, soy un pueblo."</p>
+      </main>
+        
+      <footer id="footer">
+        Para saber más acerca de Gaitán, visite su  <a href="https://es.wikipedia.org/wiki/Jorge_Eli%C3%A9cer_Gait%C3%A1n" id="tribute-link" target="_blank">página de Wikipedia</a>
+      </footer>
+    </div>
+  </body>
+</html>
